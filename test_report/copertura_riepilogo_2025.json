@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "anno": "2025",
+    "totalePortale": 3,
+    "presenti": 3,
+    "mancanti": 0,
+    "corti": 1,
+    "senzaDataDeposito": 0,
+    "cortiSenzaData": []
+  },
+  "perCorte": [
+    {
+      "corte": "CGT 2° Lombardia",
+      "codice": "V70",
+      "totale": 3,
+      "presenti": 3,
+      "mancanti": 0,
+      "coperturaContinuaFino": "10-06-2025",
+      "ultimaPresente": "10-06-2025",
+      "primaMancante": "",
+      "buchiNelPeriodo": 0
+    }
+  ]
+}
