@@ -1,0 +1,3 @@
+numero,anno,corte
+# Esempio per OCR oscurato: 35018,2025,CGT 2° Lombardia
+# Cercare la corte sul portale MEF o nei metadati, poi togliere il # e rilanciare script.py
