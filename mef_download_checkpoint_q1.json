@@ -1,0 +1,14 @@
+{
+  "year": 2025,
+  "trimestre_idx": 0,
+  "materia_idx": 0,
+  "start_pagina": 1,
+  "stats": {
+    "downloaded": 45,
+    "failed": 0,
+    "skipped_cache": 0,
+    "skipped_local": 5,
+    "skipped_meta": 20
+  },
+  "updated": "2026-07-15T11:46:49.271329"
+}

@@ -1,0 +1,10 @@
+﻿# runtime / browser / download (non vanno su GitHub)
+.edge_profile_mef*/
+.opera_profile_mef*/
+downloads_mef/
+__pycache__/
+.vscode/
+*.pyc
+*.pkl
+proxies.txt
+*.dmp
