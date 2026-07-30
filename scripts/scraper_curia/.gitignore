@@ -1,0 +1,4 @@
+downloads_out/
+.checkpoint.json
+*.pdf.tmp
+_*.log

@@ -1,10 +1,39 @@
-﻿# runtime / browser / download (non vanno su GitHub)
+﻿# download / runtime — non su GitHub
+downloads_out/
+downloads_mef/
+.tmp_downloads/
+extracted/
+.checkpoint.json
+.checkpoint.json.tmp
+*.pdf
+*.pdf.tmp
+*.zip
+
+# browser profiles
 .edge_profile_mef*/
 .opera_profile_mef*/
-downloads_mef/
+
+# python / ide
 __pycache__/
-.vscode/
 *.pyc
+.venv/
+venv/
+.vscode/
+
+# MEF / stato locale
 *.pkl
 proxies.txt
 *.dmp
+mef_download_checkpoint*.json
+mef_akamai_cooldown.json
+mef_vpn_state.json
+mef_pagine_*
+mef_recap_*
+mef_skip_*
+log_download_mef.txt
+processed_*.json
+naming_issues.csv
+oscurati_pending.csv
+*_run.log
+_last_run.json.txt
+/_tmp_*.html

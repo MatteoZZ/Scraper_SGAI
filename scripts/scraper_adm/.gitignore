@@ -1,0 +1,12 @@
+downloads_out/
+.tmp_downloads/
+.checkpoint.json
+.checkpoint.json.tmp
+*.pdf.tmp
+# HTML di probe locali; le fixture sotto fixtures/ restano versionate
+/_tmp_*.html
+
+_*.log
+_*.txt
+_all_years_run.log
+_last_run.json.txt

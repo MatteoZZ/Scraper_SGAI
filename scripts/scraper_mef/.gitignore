@@ -1,0 +1,7 @@
+.tmp_downloads/
+.tmp_out_simulate/
+downloads_out/
+.checkpoint.json
+.checkpoint.json.tmp
+*.bin
+*.pdf.tmp

@@ -1,0 +1,27 @@
+{
+  "response": {
+    "numFound": 2,
+    "docs": [
+      {
+        "id": "snciv2021521853O",
+        "filename": ["./20210730/snciv@s50@a2021@n21853@tO.pdf"],
+        "szdec": "5",
+        "kind": "snciv",
+        "tipoprov": "Ordinanza",
+        "numdec": "21853",
+        "datdep": ["20210730"],
+        "anno": "2021"
+      },
+      {
+        "id": "snciv2021U21960O",
+        "filename": ["./20210730/snciv@sU0@a2021@n21960@tO.pdf"],
+        "szdec": "U",
+        "kind": "snciv",
+        "tipoprov": "Ordinanza",
+        "numdec": "21960",
+        "datdep": ["20210730"],
+        "anno": "2021"
+      }
+    ]
+  }
+}

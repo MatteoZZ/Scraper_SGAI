@@ -1,0 +1,3 @@
+# Cache locale di esempio (Fase 2).
+# Una riga = nomeBase. Suffisso |embedded = skip download (già completo).
+Sentenza_V10_13747_2021|embedded

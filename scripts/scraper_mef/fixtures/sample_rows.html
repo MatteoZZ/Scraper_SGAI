@@ -1,0 +1,38 @@
+<!-- Fixture per test skip a 3 livelli (dry-run --use-matteo-paths) -->
+<table>
+  <!-- A: già in downloads_mef -->
+  <tr>
+    <td>Sentenza</td>
+    <td>100</td>
+    <td>2025</td>
+    <td>CGT 2° Lombardia</td>
+  </tr>
+  <!-- A+B: in downloads_mef e anche in skip D: -->
+  <tr>
+    <td>Sentenza</td>
+    <td>100</td>
+    <td>2025</td>
+    <td>CGT 1° Alessandria</td>
+  </tr>
+  <!-- B: in mef_skip / cache, NON in downloads_mef -->
+  <tr>
+    <td>Sentenza</td>
+    <td>6086</td>
+    <td>2025</td>
+    <td>CGT 1° Roma</td>
+  </tr>
+  <!-- C: non in locale né (tipicamente) in cache 2025 server → would_download -->
+  <tr>
+    <td>Sentenza</td>
+    <td>1205</td>
+    <td>2026</td>
+    <td>CGT 2° Lombardia</td>
+  </tr>
+  <!-- embedded esempio nel file cache locale del modulo -->
+  <tr>
+    <td>Sentenza</td>
+    <td>13747</td>
+    <td>2021</td>
+    <td>CGT 1° Napoli</td>
+  </tr>
+</table>
