@@ -1,0 +1,165 @@
+trimestre,codice,materia,sul_portale,nuovi_scaricati,gia_locali,gia_sgai,pagine_elaborate,stato
+Q1 gen-mar,D040,Accertamento imposte,10353,559,140,0,81,parziale
+Q1 gen-mar,E020,Accise armonizzate - Alcole,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,E010,Accise armonizzate - Prodotti energetici,230,108,10,63,24,parziale
+Q1 gen-mar,E030,Accise non armonizzate,30,23,0,7,3,quasi completa
+Q1 gen-mar,D010,Agevolazioni,102,52,0,0,6,parziale
+Q1 gen-mar,B050,Bollo,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,H010,Catasto,866,10,0,0,1,iniziata
+Q1 gen-mar,B060,Concessioni governative,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,D070,Condono,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,D060,Contenzioso,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,C050,Cosap,8,4,0,4,1,quasi completa
+Q1 gen-mar,G010,Demanio,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,B140,Diritti e tributi indiretti vari,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,F010,Dogane,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,C080,Iciap,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,A030,Ilor,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,B130,Imposta erariale di trascrizione,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,B070,Imposta sulle assicurazioni,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,C020,Imu ex Ici,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,B090,Intrattenimenti,153,10,0,0,1,iniziata
+Q1 gen-mar,C070,Invim,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,B030,Ipotecarie e catastali,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,C010,Irap,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,A020,Ires (ex Irpeg),1578,9,1,0,1,iniziata
+Q1 gen-mar,A010,Irpef,6112,10,0,0,2,iniziata
+Q1 gen-mar,B010,Iva,3521,6,4,0,1,iniziata
+Q1 gen-mar,C030,Pubblicita e pubbliche affissioni,169,0,0,0,0,"ricerca OK, 0 pagine"
+Q1 gen-mar,H030,Pubblicita immobiliare,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,B110,Radiodiffusioni,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,D080,Rapporti con l'AF,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,B020,Registro,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,D030,Rimborsi,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,D020,Riscossione,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,H020,Servizi estimativi (OMI),,0,0,0,0,crash / no ricerca
+Q1 gen-mar,B040,Successioni e donazioni,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,C040,Tarsu,5148,27,1,0,3,parziale
+Q1 gen-mar,B080,Tassa sui contratti di borsa,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,B100,Tasse automobilistiche,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,C060,Tosap,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,C090,Tributi locali vari,,0,0,0,0,crash / no ricerca
+Q1 gen-mar,D050,Violazioni e sanzioni,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,D040,Accertamento imposte,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,E020,Accise armonizzate - Alcole,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,E010,Accise armonizzate - Prodotti energetici,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,E030,Accise non armonizzate,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,D010,Agevolazioni,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B050,Bollo,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,H010,Catasto,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B060,Concessioni governative,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,D070,Condono,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,D060,Contenzioso,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,C050,Cosap,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,G010,Demanio,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B140,Diritti e tributi indiretti vari,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,F010,Dogane,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,C080,Iciap,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,A030,Ilor,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B130,Imposta erariale di trascrizione,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B070,Imposta sulle assicurazioni,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,C020,Imu ex Ici,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B090,Intrattenimenti,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,C070,Invim,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B030,Ipotecarie e catastali,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,C010,Irap,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,A020,Ires (ex Irpeg),,0,0,0,0,crash / no ricerca
+Q2 apr-giu,A010,Irpef,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B010,Iva,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,C030,Pubblicita e pubbliche affissioni,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,H030,Pubblicita immobiliare,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B110,Radiodiffusioni,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,D080,Rapporti con l'AF,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B020,Registro,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,D030,Rimborsi,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,D020,Riscossione,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,H020,Servizi estimativi (OMI),,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B040,Successioni e donazioni,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,C040,Tarsu,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B080,Tassa sui contratti di borsa,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,B100,Tasse automobilistiche,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,C060,Tosap,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,C090,Tributi locali vari,,0,0,0,0,crash / no ricerca
+Q2 apr-giu,D050,Violazioni e sanzioni,,0,0,0,0,crash / no ricerca
+Q3 lug-set,D040,Accertamento imposte,,0,0,0,0,crash / no ricerca
+Q3 lug-set,E020,Accise armonizzate - Alcole,,0,0,0,0,crash / no ricerca
+Q3 lug-set,E010,Accise armonizzate - Prodotti energetici,,0,0,0,0,crash / no ricerca
+Q3 lug-set,E030,Accise non armonizzate,,0,0,0,0,crash / no ricerca
+Q3 lug-set,D010,Agevolazioni,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B050,Bollo,,0,0,0,0,crash / no ricerca
+Q3 lug-set,H010,Catasto,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B060,Concessioni governative,,0,0,0,0,crash / no ricerca
+Q3 lug-set,D070,Condono,,0,0,0,0,crash / no ricerca
+Q3 lug-set,D060,Contenzioso,,0,0,0,0,crash / no ricerca
+Q3 lug-set,C050,Cosap,,0,0,0,0,crash / no ricerca
+Q3 lug-set,G010,Demanio,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B140,Diritti e tributi indiretti vari,,0,0,0,0,crash / no ricerca
+Q3 lug-set,F010,Dogane,,0,0,0,0,crash / no ricerca
+Q3 lug-set,C080,Iciap,,0,0,0,0,crash / no ricerca
+Q3 lug-set,A030,Ilor,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B130,Imposta erariale di trascrizione,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B070,Imposta sulle assicurazioni,,0,0,0,0,crash / no ricerca
+Q3 lug-set,C020,Imu ex Ici,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B090,Intrattenimenti,,0,0,0,0,crash / no ricerca
+Q3 lug-set,C070,Invim,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B030,Ipotecarie e catastali,,0,0,0,0,crash / no ricerca
+Q3 lug-set,C010,Irap,,0,0,0,0,crash / no ricerca
+Q3 lug-set,A020,Ires (ex Irpeg),,0,0,0,0,crash / no ricerca
+Q3 lug-set,A010,Irpef,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B010,Iva,,0,0,0,0,crash / no ricerca
+Q3 lug-set,C030,Pubblicita e pubbliche affissioni,,0,0,0,0,crash / no ricerca
+Q3 lug-set,H030,Pubblicita immobiliare,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B110,Radiodiffusioni,,0,0,0,0,crash / no ricerca
+Q3 lug-set,D080,Rapporti con l'AF,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B020,Registro,,0,0,0,0,crash / no ricerca
+Q3 lug-set,D030,Rimborsi,,0,0,0,0,crash / no ricerca
+Q3 lug-set,D020,Riscossione,,0,0,0,0,crash / no ricerca
+Q3 lug-set,H020,Servizi estimativi (OMI),,0,0,0,0,crash / no ricerca
+Q3 lug-set,B040,Successioni e donazioni,,0,0,0,0,crash / no ricerca
+Q3 lug-set,C040,Tarsu,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B080,Tassa sui contratti di borsa,,0,0,0,0,crash / no ricerca
+Q3 lug-set,B100,Tasse automobilistiche,,0,0,0,0,crash / no ricerca
+Q3 lug-set,C060,Tosap,,0,0,0,0,crash / no ricerca
+Q3 lug-set,C090,Tributi locali vari,,0,0,0,0,crash / no ricerca
+Q3 lug-set,D050,Violazioni e sanzioni,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,D040,Accertamento imposte,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,E020,Accise armonizzate - Alcole,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,E010,Accise armonizzate - Prodotti energetici,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,E030,Accise non armonizzate,17,17,0,0,2,quasi completa
+Q4 ott-dic,D010,Agevolazioni,91,40,0,0,5,parziale
+Q4 ott-dic,B050,Bollo,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,H010,Catasto,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B060,Concessioni governative,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,D070,Condono,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,D060,Contenzioso,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,C050,Cosap,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,G010,Demanio,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B140,Diritti e tributi indiretti vari,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,F010,Dogane,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,C080,Iciap,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,A030,Ilor,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B130,Imposta erariale di trascrizione,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B070,Imposta sulle assicurazioni,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,C020,Imu ex Ici,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B090,Intrattenimenti,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,C070,Invim,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B030,Ipotecarie e catastali,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,C010,Irap,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,A020,Ires (ex Irpeg),,0,0,0,0,crash / no ricerca
+Q4 ott-dic,A010,Irpef,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B010,Iva,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,C030,Pubblicita e pubbliche affissioni,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,H030,Pubblicita immobiliare,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B110,Radiodiffusioni,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,D080,Rapporti con l'AF,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B020,Registro,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,D030,Rimborsi,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,D020,Riscossione,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,H020,Servizi estimativi (OMI),,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B040,Successioni e donazioni,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,C040,Tarsu,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B080,Tassa sui contratti di borsa,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,B100,Tasse automobilistiche,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,C060,Tosap,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,C090,Tributi locali vari,,0,0,0,0,crash / no ricerca
+Q4 ott-dic,D050,Violazioni e sanzioni,,0,0,0,0,crash / no ricerca

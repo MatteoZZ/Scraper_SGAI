@@ -1,0 +1,33 @@
+src=D:\ dst=C:\Users\meko srl\.cursor\Matteo_folder\SGAI\downloads_mef
+COPY Sentenza_U01_100_2025.pdf -> Sentenza_U01_100_2025.pdf
+COPY Sentenza_U01_101_2025.pdf -> Sentenza_U01_101_2025.pdf
+COPY Sentenza_U01_102_2025.pdf -> Sentenza_U01_102_2025.pdf
+COPY Sentenza_U01_103_2025.pdf -> Sentenza_U01_103_2025.pdf
+COPY Sentenza_U01_104_2025.pdf -> Sentenza_U01_104_2025.pdf
+COPY Sentenza_U01_105_2025.pdf -> Sentenza_U01_105_2025.pdf
+COPY Sentenza_U01_106_2025.pdf -> Sentenza_U01_106_2025.pdf
+COPY Sentenza_U01_107_2025.pdf -> Sentenza_U01_107_2025.pdf
+COPY Sentenza_U01_108_2025.pdf -> Sentenza_U01_108_2025.pdf
+COPY Sentenza_U01_109_2025.pdf -> Sentenza_U01_109_2025.pdf
+COPY Sentenza_U01_10_2025.pdf -> Sentenza_U01_10_2025.pdf
+COPY Sentenza_U01_110_2025.pdf -> Sentenza_U01_110_2025.pdf
+COPY Sentenza_U01_111_2025.pdf -> Sentenza_U01_111_2025.pdf
+COPY Sentenza_U01_112_2025.pdf -> Sentenza_U01_112_2025.pdf
+COPY Sentenza_U01_113_2025.pdf -> Sentenza_U01_113_2025.pdf
+COPY Sentenza_U01_114_2025.pdf -> Sentenza_U01_114_2025.pdf
+COPY Sentenza_U01_115_2025.pdf -> Sentenza_U01_115_2025.pdf
+COPY Sentenza_U01_116_2025.pdf -> Sentenza_U01_116_2025.pdf
+COPY Sentenza_U01_117_2025.pdf -> Sentenza_U01_117_2025.pdf
+COPY Sentenza_U01_118_2025.pdf -> Sentenza_U01_118_2025.pdf
+COPY Sentenza_U19_189_2025.pdf -> Sentenza_U19_189_2025.pdf
+COPY Sentenza_U24_3275_2025.pdf -> Sentenza_U24_3275_2025.pdf
+COPY Sentenza_U43_176_2025.pdf -> Sentenza_U43_176_2025.pdf
+COPY Sentenza_U59_205_2025.pdf -> Sentenza_U59_205_2025.pdf
+COPY Sentenza_U75_282_2025.pdf -> Sentenza_U75_282_2025.pdf
+COPY Sentenza_U88_911_2025.pdf -> Sentenza_U88_911_2025.pdf
+COPY Sentenza_U91_4594_2025.pdf -> Sentenza_U91_4594_2025.pdf
+ERR Sentenza_U91_6086_2025.pdf: [WinError 433] È stato specificato un dispositivo inesistente
+ERR Sentenza_U91_6087_2025.pdf: [WinError 433] È stato specificato un dispositivo inesistente
+ERR Sentenza_U91_6088_2025.pdf: [WinError 433] È stato specificato un dispositivo inesistente
+ERR Sentenza_U91_6089_2025.pdf: [WinError 433] È stato specificato un dispositivo inesistente
+DONE copied=15477 skipped_exist=3245 missing_src=79307 bad=4 dest_pdfs=34422

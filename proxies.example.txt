@@ -1,0 +1,11 @@
+# Un proxy per riga (residential/mobile consigliato).
+# Formato: http://user:pass@host:port
+# Oppure: http://host:port
+#
+# Copia come proxies.txt e compila. Usato da avvia_workers_proxy.ps1
+#
+# Esempi (sostituisci):
+# http://user123:pass456@gate.smartproxy.com:7000
+# http://user123:pass456@gate.smartproxy.com:7001
+# http://user123:pass456@gate.smartproxy.com:7002
+# http://user123:pass456@gate.smartproxy.com:7003

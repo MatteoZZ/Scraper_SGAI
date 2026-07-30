@@ -1,0 +1,136 @@
+================================================================================
+REPORT SGAI — STATO DOWNLOAD SENTENZE MEF
+Bozza per collega
+Data: 24 luglio 2026
+================================================================================
+
+AMBITO
+------
+Download automatico sentenze dal portale:
+  bancadatigiurisprudenza.giustiziatributaria.gov.it
+
+Script principale:  SGAI/download_mef_2025.py
+Naming:             Sentenza_{CODICE}_{NUMERO}_{ANNO}.pdf
+Focus attuale:      materia D040 (Accertamento), anno 2025, semestre 1 (gen-giu)
+
+
+1. OBIETTIVO
+------------
+- Scaricare i PDF mancanti rispetto a cache_nomi_base_2025.txt
+- Rinominarli con lo standard SGAI riportato sopra
+- Salvare in downloads_mef/
+- Checkpoint / resume e log pagine
+- Gestire Akamai (403 / Access Denied) con meno interventi manuali possibili
+
+
+2. COSA FUNZIONA
+----------------
+[OK] Ricerca + tabella risultati (semestre/materia, righe, link Visualizza)
+[OK] Naming SGAI (portal_to_filename + cache)
+[OK] Skip già presenti (cache server ~17k nomi 2025 + file locali)
+[OK] Download PDF con browser reale (Opera/Edge via CDP) — NON headless
+[OK] Resume / checkpoint (mef_download_checkpoint_s1.json)
+[OK] Log progresso (mef_pagine_log.csv)
+[OK] Browser Opera con profilo persistente (.opera_profile_mef)
+[OK] Ritmi anti-Akamai (pause variabili tra PDF e tra pagine; soft-mode)
+[OK] AUTO-HEAL locale: su 403 chiude browser, pausa, nuovo UA, ritenta
+     SENZA cambiare IP al primo 403
+[OK] Classificazione "IP bruciato" (euristica): cambio IP solo se blocco
+     persistente (più heal locali falliti / Access Denied / streak alta)
+[OK] Rotazione Proton a livello tecnico (verifica IP pubblico diverso)
+[OK] Modalità 1 worker (--solo) — setup stabile consigliato oggi
+[OK] Documentazione: README.md + SETUP_WORKER_MEF_COLLEGA.md
+
+In sintesi: il pipeline cerca → salta → scarica → rinomina → checkpoint
+FUNZIONA su un singolo worker, a ritmo lento, con ripresa dopo interruzioni così da rallentare il riconoscimento da parte di Akamai del nostro processo come "bot".
+
+
+3. COSA NON FUNZIONA (O FUNZIONA MALE)
+--------------------------------------
+[NO] Multi-worker sullo stesso IP (2+ script / stesso WiFi-hotspot → 403)
+[NO] Scala 10-12 worker senza proxy dedicati
+[DEBOLE] Proton Free come rotazione affidabile (spesso stesso exit o IP vicini)
+[INUTILE] Cooldown lunghi sullo stesso IP bruciato (serve IP nuovo, non solo attesa)
+[FRAGILE] Salto pagina post-ricerca (mitigato: ripristino obbligatorio +
+          anti-regressione checkpoint; dopo ricerca sei sempre a pag.1)
+[BASSO] Throughput: con pause ~18-32s/PDF e ~25s+/pagina si parla di
+        decine–centinaia di pagine/giorno, non migliaia
+[IN CORSO] Copertura completa 2025 / tutte le materie (focus ancora su D040 S1)
+[NON OPERATIVO QUI] Proxy residential in produzione (supporto --proxy c'è,
+                    manca il pool sticky in uso)
+[PARZIALE] Automazione totale "set and forget" (meglio di prima, ma Akamai
+           + VPN consumer restano il collo di bottiglia)
+
+
+4. VINCOLO CENTRALE (AKAMAI)
+----------------------------
+Il portale non offre API pubbliche usabili in headless.
+Akamai valuta soprattutto:
+  1) IP di uscita
+  2) Ritmo (ricerche, click ">", download)
+  3) Sessione browser / fingerprint
+
+Regola operativa: 1 worker serio = 1 exit IP dedicato.
+
+Una VPN consumer aiuta UN tunnel; NON moltiplica gli IP sullo stesso PC.
+Per il parallelo servono proxy sticky (o più macchine/reti).
+
+
+5. STATO AVANZAMENTO (SNAPSHOT)
+-------------------------------
+Materia:     D040
+Semestre:    1 (gen-giu)
+Anno:        2025
+Checkpoint:  circa pagina 372
+Stats (indicative da checkpoint): ~129 download nuovi in sessione tracciata,
+                                 molti skip su pagine già viste
+Portale:     D040 S1 nell'ordine di ~20k risultati → ancora molta strada a 1 worker
+Aggiornato:  2026-07-23 (ultimo checkpoint noto al momento del report)
+
+
+6. ARCHITETTURA ATTUALE VS TARGET
+---------------------------------
+OGGI (funzionante):
+  1 PC + Opera + (Proton opzionale) + 1 worker --solo
+  → download lento ma corretto + resume
+
+TARGET PER SCALA (non ancora operativo in casa):
+  N sticky residential session
+  → N worker (profilo + proxy + range pagine diversi)
+  → throughput circa N volte
+
+
+7. RACCOMANDAZIONI
+------------------
+1. Continuare a 1 worker finché non ci sono IP separati
+   (proxy sticky o reti distinte).
+2. Usare il comando in README.md:
+   --resume --solo --browser opera --vpn proton
+3. NON lanciare D040 in parallelo sullo stesso IP "per andare più veloci".
+4. Per accelerare in modo serio: budget su proxy residential sticky
+   (1 sessione per worker), non solo upgrade VPN Free → Plus.
+5. Su 403: prima heal locale; cambio IP solo se classificato bruciato.
+
+
+8. FILE UTILI
+-------------
+download_mef_2025.py              Downloader
+mef_vpn.py                        Servizio IP / rotate
+rotate_proton_vpn.ps1             Script rotazione Proton Windows
+mef_download_checkpoint_s1.json   Ripresa semestre 1
+mef_pagine_log.csv                Storico pagine
+README.md                         Come eseguire
+SETUP_WORKER_MEF_COLLEGA.md       Piano multi-worker / proxy
+REPORT_STATO_SGAI_COLLEGA.txt     Questo report
+
+
+9. VERDETTO
+-----------
+Funziona in produzione controllata a SINGOLO worker, con naming, skip e resume.
+NON scala e resta fragile su Akamai finché non ci sono exit IP dedicati
+(proxy sticky). Proton aiuta il cambio IP quando è davvero bruciato, ma
+NON risolve il multi-worker sullo stesso PC.
+
+================================================================================
+Fine report — bozza
+================================================================================
