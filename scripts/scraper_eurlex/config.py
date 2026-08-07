@@ -31,7 +31,8 @@ class Config:
             os.environ.get("EURLEX_SCRAPER_CHECKPOINT", str(DEFAULT_CHECKPOINT))
         )
         self.min_pdf_bytes = env_int("EURLEX_SCRAPER_MIN_PDF_BYTES", 1000)
-        self.max_pdf_bytes = env_int("EURLEX_SCRAPER_MAX_PDF_BYTES", 80_000_000)
+        # alcuni CELLAR/taxation sono raccolte enormi (anche >1 GB)
+        self.max_pdf_bytes = env_int("EURLEX_SCRAPER_MAX_PDF_BYTES", 2_000_000_000)
         self.download_delay_min = env_float("EURLEX_SCRAPER_DL_DELAY_MIN", 1.0)
         self.download_delay_max = env_float("EURLEX_SCRAPER_DL_DELAY_MAX", 2.5)
         self.page_size = env_int("EURLEX_SCRAPER_PAGE_SIZE", 50)
@@ -45,3 +46,6 @@ class Config:
         self.mode = "eurovoc"
         # lingue SPARQL in ordine di preferenza (Curia: solo ITA, evita doppio giro ENG inutile)
         self.languages: tuple[str, ...] = LANG_PREF
+        # multi-worker: stesso downloads_out, checkpoint .w{i}of{n}.json
+        self.workers = 1
+        self.worker_id = 0

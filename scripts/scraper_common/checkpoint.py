@@ -35,7 +35,11 @@ class Checkpoint:
             "failed": [],
             "last_document": None,
             "status": "idle",
+            "catalog_cursor": None,
         }
+        # set in-memory: con 6k+ voci, `x in list` rendeva il resume lentissimo
+        self._processed: set[str] = set()
+        self._failed: set[str] = set()
         self.load()
 
     def load(self) -> None:
@@ -46,6 +50,14 @@ class Checkpoint:
             self.data.update(loaded)
             self.data.setdefault("processed", [])
             self.data.setdefault("failed", [])
+            self.data.setdefault("catalog_cursor", None)
+            proc = list(self.data.get("processed") or [])
+            fail = list(self.data.get("failed") or [])
+            # dedupe preservando ordine
+            self.data["processed"] = list(dict.fromkeys(proc))
+            self.data["failed"] = list(dict.fromkeys(fail))
+            self._processed = set(self.data["processed"])
+            self._failed = set(self.data["failed"])
 
     def save(self) -> None:
         self.path.parent.mkdir(parents=True, exist_ok=True)
@@ -71,31 +83,48 @@ class Checkpoint:
         self.data["status"] = status
         self.save()
 
+    def set_catalog_cursor(self, cursor: dict[str, Any] | None) -> None:
+        self.data["catalog_cursor"] = cursor
+        self.save()
+
     def is_done(self, nome_base: str) -> bool:
-        return nome_base in self.data.get("processed", []) or nome_base in self.data.get(
-            "failed", []
-        )
+        return nome_base in self._processed or nome_base in self._failed
 
     def mark_processed(self, nome_base: str) -> None:
-        processed = self.data.setdefault("processed", [])
-        if nome_base not in processed:
-            processed.append(nome_base)
-        failed = self.data.setdefault("failed", [])
-        if nome_base in failed:
-            failed.remove(nome_base)
+        if nome_base not in self._processed:
+            self._processed.add(nome_base)
+            self.data.setdefault("processed", []).append(nome_base)
+        if nome_base in self._failed:
+            self._failed.discard(nome_base)
+            failed = self.data.setdefault("failed", [])
+            if nome_base in failed:
+                failed.remove(nome_base)
         self.data["last_document"] = nome_base
         self.save()
 
     def mark_failed(self, nome_base: str) -> None:
-        failed = self.data.setdefault("failed", [])
-        if nome_base and nome_base not in failed:
-            failed.append(nome_base)
+        if nome_base and nome_base not in self._failed:
+            self._failed.add(nome_base)
+            self.data.setdefault("failed", []).append(nome_base)
         self.data["last_document"] = nome_base
         self.save()
 
     def invalidate_done(self, nome_base: str) -> None:
-        for key in ("processed", "failed"):
-            lst = self.data.setdefault(key, [])
-            if nome_base in lst:
-                lst.remove(nome_base)
+        if nome_base in self._processed:
+            self._processed.discard(nome_base)
+            proc = self.data.setdefault("processed", [])
+            if nome_base in proc:
+                proc.remove(nome_base)
+        if nome_base in self._failed:
+            self._failed.discard(nome_base)
+            failed = self.data.setdefault("failed", [])
+            if nome_base in failed:
+                failed.remove(nome_base)
+        self.save()
+
+    def clear_failed(self) -> None:
+        if not self._failed and not self.data.get("failed"):
+            return
+        self._failed.clear()
+        self.data["failed"] = []
         self.save()
